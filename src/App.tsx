@@ -1,9 +1,10 @@
-import './App.css'
+import { Product } from './components/Product'
+import { products } from './data/product'
 
 function App() {
   return (
-    <div className="App text-3xl font-bold underline">
-      <h1>Hello Vite</h1>
+    <div className="container mx-auto max-w-2xl pt-5">
+      <Product product={products[0]}/>
     </div>
   )
 }
