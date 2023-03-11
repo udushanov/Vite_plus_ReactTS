@@ -1,5 +1,5 @@
-import { useState } from "react"
-import { IProduct } from "../data/models"
+import { useState } from 'react'
+import { IProduct } from '../data/models'
 
 interface ProductProps {
   product: IProduct
@@ -24,7 +24,7 @@ export function Product({product}: ProductProps) {
       </button>
       {details && <div>
         <p>{product.description}</p>
-        <p>Rate: <span style={{fontWeight: 'bold'}}>{product.rating.rate}</span></p>  
+        <p>Rate: <span style={{fontWeight: 'bold'}}>{product?.rating?.rate}</span></p>  
       </div>}
     </div>
   )
